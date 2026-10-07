@@ -50,7 +50,11 @@ bool isBalanced(char exp[]) {
 	}
 	return s.isEmpty();
 	}
-	
+
+bool isDigit(char c) {
+    return (c >= '0' && c <= '9');
+}
+
 int evaluatePostfix(char postfix[]) {
     Stack s;
     for (int i = 0; postfix[i] != '\0'; i++) {
